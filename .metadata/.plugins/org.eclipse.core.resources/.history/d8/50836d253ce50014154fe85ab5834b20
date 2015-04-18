@@ -1,0 +1,31 @@
+package conditionalAndBooleanOperators;
+
+public class ConditionalAndLogicalOperatorTest {
+
+	public static void main(String[] args) {
+				
+		System.out.println("CONDITIONAL AND : ");
+		System.out.printf("\n %s%b :  \n%s%b : \n%s%b : \n%s%b : ",
+				"false && false", "false && true", "true && false", "true && true" ,
+				(false && false), (false && true), (true && false), (true && true));
+		
+
+		System.out.println("CONDITIONAL OR : ");
+		System.out.printf("\n %s%b :  \n%s%b : \n%s%b : \n%s%b : ",
+				"false || false", "false || true", "true || false", "true || true" ,
+				(false || false), (false || true), (true || false), (true || true));
+		
+
+		System.out.println("BOOLEAN AND : ");
+		System.out.printf("\n %s%b :  \n%s%b : \n%s%b : \n%s%b : ",
+				"false & false", "false & true", "true & false", "true & true" ,
+				(false & false), (false & true), (true & false), (true & true));
+		
+
+		System.out.println("BOOLEAN OR : ");
+		System.out.printf("\n %s%b :  \n%s%b : \n%s%b : \n%s%b : ",
+				"false | false", "false | true", "true | false", "true | true" ,
+				(false | false), (false | true), (true | false), (true | true));
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.ofss.fc.control.contructs;
+
+public class Student {
+
+	private String studentName ;
+	private int studentId ;
+	private Map<Integer, Float> scoreCard ;
+	
+	
+	public Student( String courseName , int courseNumber){
+		this.studentName = courseName ;
+		this.studentId = courseNumber ;
+	}
+	
+	
+	
+	private String getCourseName(){
+		return studentName ;
+	}
+	
+
+	public int getCourseNumber() {
+		return studentId;
+	}
+
+	public void setCourseNumber(int courseNumber) {
+		this.studentId = courseNumber;
+	}
+	
+	private void setCourseName(String courseName){
+		this.studentName = courseName ;
+	}
+}

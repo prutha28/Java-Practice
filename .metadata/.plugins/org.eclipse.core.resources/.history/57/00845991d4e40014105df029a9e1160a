@@ -1,0 +1,6 @@
+package com.ofss.fc.control.contructs;
+
+public class Grade {
+	private double gradeValue ; 
+
+}

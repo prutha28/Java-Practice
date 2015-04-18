@@ -1,0 +1,10 @@
+package com.ofss.fc.control.contructs;
+
+public class StudentAverageUsingCounter {
+
+	private String courseName ;
+	
+	public StudentAverageUsingCounter( String courseName ){
+		this.courseName = courseName ;
+	}
+}

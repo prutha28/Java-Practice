@@ -1,0 +1,49 @@
+package com.ofss.fc.control.contructs;
+
+import java.util.Iterator;
+import java.util.Map;
+
+public class Student {
+
+	private String studentName ;
+	private int studentId ;
+	private Map<Course, Grade> scoreCard ;
+	
+	
+	public Student( String courseName , int courseNumber, Map<Course, Grade> scoreCard){
+		this.studentName = courseName ;
+		this.studentId = courseNumber ;
+		if ( scoreCard!=null && !scoreCard.isEmpty()){
+			this.scoreCard = this.populateScoresForStudent(scoreCard);	
+		}
+	}
+	
+	
+	
+	private Map<Course, Grade> populateScoresForStudent(Map<Course, Grade> scoreCard) {
+		int numberOfScores = scoreCard.size() ;
+		while (numberOfScores> 0 ){
+			
+			numberOfScores-- ;
+		}
+		return scoreCard;
+	}
+
+
+	private String getCourseName(){
+		return studentName ;
+	}
+	
+
+	public int getCourseNumber() {
+		return studentId;
+	}
+
+	public void setCourseNumber(int courseNumber) {
+		this.studentId = courseNumber;
+	}
+	
+	private void setCourseName(String courseName){
+		this.studentName = courseName ;
+	}
+}

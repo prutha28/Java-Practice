@@ -1,0 +1,14 @@
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+
+		System.out.println("Enter the word to reverse!");
+		Scanner input = new Scanner(System.in) ;
+
+	}
+
+	public void reverseAString( String word){
+
+	}
+}

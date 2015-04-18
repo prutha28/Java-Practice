@@ -1,0 +1,16 @@
+
+public class PalindromeCheck {
+
+	public static void main(String[] args){
+		
+		System.out.println("Enter a word to check!");
+		
+	}
+	
+	public boolean isPalindrome( String word){
+		
+		
+		return true ;
+	}
+	
+}

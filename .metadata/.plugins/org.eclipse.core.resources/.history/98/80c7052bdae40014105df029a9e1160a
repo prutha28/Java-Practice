@@ -1,0 +1,44 @@
+package com.ofss.fc.control.contructs;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+public class Student {
+
+	private String studentName ;
+	private int studentId ;
+	private Map<Course, Grade> scoreCard ;
+	
+	
+	public Student( String courseName , int courseNumber, Map<Course, Grade> scoreCard){
+		this.studentName = courseName ;
+		this.studentId = courseNumber ;
+		this.scoreCard = scoreCard ;
+	}
+	
+	public String getCourseName(){
+		return studentName ;
+	}
+	
+	public Map<Course, Grade> getScoreCard() {
+		return scoreCard;
+	}
+
+	public int getCourseNumber() {
+		return studentId;
+	}
+
+	public void setCourseNumber(int courseNumber) {
+		this.studentId = courseNumber;
+	}
+	
+	public void setCourseName(String courseName){
+		this.studentName = courseName ;
+	}
+	
+	public void setScoreCard(Map<Course, Grade> scoreCard) {
+		this.scoreCard = scoreCard;
+	}
+
+}

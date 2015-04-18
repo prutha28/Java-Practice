@@ -1,0 +1,5 @@
+package com.ofss.fc.exception.handiling;
+
+public class ChainedExceptions {
+
+}

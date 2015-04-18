@@ -1,0 +1,78 @@
+package com.ofss.fc.using.switchConstruct;
+
+import java.util.Scanner;
+
+public class GradeBook {
+
+	private String courseName ;
+	private int gradeCounter ; // the number of grades entered by user
+	private int total;		  // the total of all grades entered by the user 
+	private float average ;
+	private int marksScored ;
+	
+	private int aCount ;	// Number of students receiving 'A' grade
+	private int bCount ;	// Number of students receiving 'B' grade
+	private int cCount ;	// Number of students receiving 'C' grade
+	private int dCount ;	// Number of students receiving 'D' grade
+	private int eCount ;	// Number of students receiving 'E' grade
+	private int fCount ;	// Number of students receiving 'F' grade
+	
+	public void displayWelcomeMessage(){
+		System.out.println("Welcome to " + this.courseName);
+	}
+	
+	public void determineClassAverageForCourse(){
+		Scanner input = new Scanner(System.in) ;
+		while( input.hasNext()){
+			marksScored = input.nextInt() ;
+			total = total + marksScored ;
+			gradeCounter++ ;
+			incrementLetterGradeCount(marksScored);
+		}
+		
+		if( gradeCounter == 0){
+			System.out.println("No Grades have been input!");
+		}else{
+			average =  (float)total / gradeCounter ;
+		}
+	}
+
+	private void incrementLetterGradeCount(int marksScored) {
+		
+		switch (marksScored /10) {
+		case 10:
+		case 9:
+			aCount++;
+			break;
+		case 8:
+			bCount++;
+			break;
+		case 7:
+		case 6: 
+			cCount++;
+			break ;
+		
+		case 5:
+		case 4:
+			dCount++;
+			break;
+		case 3:
+			eCount++;
+			break;
+		default:
+			fCount++;
+			break;
+		}
+	}
+	
+	public void generateGradeReport(){
+		System.out.printf("Grade Report :");
+
+		System.out.printf("\nTotal of all marks scored is %d", total);
+		System.out.printf("\nAverage of all marks scored is %.2f", average);
+		
+		System.out.println("\nThe number of Students scoring a particular grade is :);
+		
+		
+	}
+}

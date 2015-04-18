@@ -1,0 +1,36 @@
+package com.ofss.fc.control.contructs;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class StudentAverageUsingCounterTest {
+
+	public static void main( String[] args){
+
+
+		System.out.println("Enter the Name of the Course for which you want to calculate average");
+		Scanner input = new Scanner(System.in) ;
+		try{
+			System.out.println("Welcome to " + input.nextLine());
+		}catch ( InputMismatchException e){
+			System.out.println("Please Enter Valid Input, String Expected!");
+		}
+
+	}
+
+
+	private double determineAverageForCourse(){
+		float average = 0 ;
+		float total = 0 ;
+		int numberOfGrades = 1 ; // Number of Grades entered for a subject == number of students in that course.
+
+
+		Scanner input = new Scanner(System.in) ;
+		for (int i = 0; i < array.length; i++) {
+
+		}
+
+		return average ;
+	}
+
+}

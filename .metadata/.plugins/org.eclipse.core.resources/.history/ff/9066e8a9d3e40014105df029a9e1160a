@@ -1,0 +1,32 @@
+package com.ofss.fc.control.contructs;
+
+public class Student {
+
+	private String courseName ;
+	private int courseNumber ;
+	
+	
+	public Student( String courseName , int courseNumber){
+		this.courseName = courseName ;
+		this.courseNumber = courseNumber ;
+	}
+	
+	
+	
+	private String getCourseName(){
+		return courseName ;
+	}
+	
+
+	public int getCourseNumber() {
+		return courseNumber;
+	}
+
+	public void setCourseNumber(int courseNumber) {
+		this.courseNumber = courseNumber;
+	}
+	
+	private void setCourseName(String courseName){
+		this.courseName = courseName ;
+	}
+}
